@@ -1,0 +1,49 @@
+Juego Battleship 
+
+El juego Battleship  es un juego de estrategia para un jugador. Se tiene 5 barcos: portaviones, acorazado, submarino, crucero y destructor. La finalidad es hundir los barcos que serán colocados por otro jugador en el tablero del juego de 10x10. Los puntajes serán asignados conforme al rendimiento del juego. 
+
+Barcos:
+1 Portaviones -> Este barco ocupa 5 casillas en el tablero de juego
+1 Acorazado -> Este barco ocupa 4 casillas en el tablero de juego
+1 Submarino -> Este barco ocupa 3 casillas en el tablero de juego
+1 Crucero -> Este barco ocupa 3 casillas en el tablero de juego
+1 Destructor -> Este barco ocupa 2 casillas en el tablero de juego
+
+Reglas:
+1. Los barcos solo se pueden colocar de forma horizontal o vertical.
+2. Los barcos deben ser colocados dentro del límite del tablero.
+3. Los barcos no se pueden sobreponer.
+4. No se puede cambiar la posición del barco una vez colocado en el tablero.
+5. No se puede deshacer un movimiento una vez validado que no se repite o se hizo el movimiento anteriormente.
+6. Se podrá disparar a cualquier casilla, a excepción de tener un movimiento repetido ya registrado.
+7. La partida acaba cuando se haya hundido todos los barcos o se seleccione el fin del juego.
+8. Los movimientos vacíos se registran como "O".
+9. Los movimientos que aciertan con una posición de un barco se registra con "X".
+
+
+Palabras claves dentro del juego:
+Hundido: El barco ya no le queda más casillas y por ende, el barco es eliminado del juego.
+Tocado: Cuando se atina a una casilla que pertenece a un barco.
+Vacio: Disparo a una casilla donde no se ha colocado nigún barco.
+
+Puntuación y bonificación:
+1. Si el primer movimiento acierta con la posición de un barco se le suma una bonificación de 500 puntos
+2. El barco portaviones tendrá puntos adicionales por cada golpe de 25 puntos
+3. El barco acorazado tendrá puntos adicionales por cada golpe de 15 puntos
+4. El barco submarino tendrá puntos adicionales por cada golpe de 10 puntos
+5. El barco crucero tendrá puntos adicionales por cada golpe de 5 puntos
+
+
+Juego:
+1. El portaviones tiene una vida de 200 puntos y se le restará 40 puntos por cada golpe.
+2. El acorazado tiene una vida de 120 puntos y se le restará 30 puntos por cada golpe.
+3. El submarino tiene una vida de 90 puntos y se le restará 30 puntos por cada golpe.
+4. El crucero tiene una vida de 60 puntos y se le restará 20 puntos por cada golpe.
+5. El destructor tiene una vida de 100 puntos y se le restará 50 puntos por cada golpe.
+6. Los movimientos se realizan mencionando fila y columna mediante números.
+7. Cuando se acierta una posición del barco se envía un mensaje "Barco tocado".
+8. Cuando el barco se reduce su vida a 0 se envía un mensaje "Barco <tipo> hundido".
+9. Cuando el movimiento escogico no acierta con ninguna posición del algún barco se envía en mensaje "Vacío".
+
+
+
